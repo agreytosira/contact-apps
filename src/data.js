@@ -2,9 +2,9 @@ const getData = () => {
     return [
         {
             id: 1,
-            name: 'Dimas Saputra',
-            tag: 'dimasmds',
-            imageUrl: '/images/dimasmds.jpeg'
+            name: 'Agrey Tosira',
+            tag: 'agreytosira',
+            imageUrl: '/images/arifaizin.jpeg'
         },
         {
             id: 2,
@@ -17,6 +17,12 @@ const getData = () => {
             name: 'Rahmat Fajri',
             tag: 'rfajri27',
             imageUrl: '/images/rfajri27.jpeg'
+        },
+        {
+            id: 4,
+            name: 'Dimas Saputra',
+            tag: 'dimasmds',
+            imageUrl: '/images/dimasmds.jpeg'
         }
     ];
 };
