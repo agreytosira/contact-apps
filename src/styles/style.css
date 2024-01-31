@@ -71,6 +71,7 @@ img {
 }
 
 .contact-item__delete {
+    margin-left: auto;
     padding: 8px;
     font-size: 28px;
     color: red;
