@@ -7,8 +7,7 @@ export default class ContactInput extends Component {
 
     this.state = {
       name: '',
-      tag: '',
-      addContact: () => {}
+      tag: ''
     }
 
     this.onNameChangeEventHandler = this.onNameChangeEventHandler.bind(this)
