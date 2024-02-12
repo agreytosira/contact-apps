@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactList from '../components/ContactList';
-import { deleteContact } from '../utils/data';
+import { deleteContact } from '../utils/api';
 import SearchBar from '../components/SearchBar';
 import { useSearchParams } from 'react-router-dom';
 import { getContacts } from '../utils/api';
@@ -38,13 +38,13 @@ class HomePage extends React.Component {
         });
     }
 
-    onDeleteHandler(id) {
-        deleteContact(id);
+    async onDeleteHandler(id) {
+        await deleteContact(id);
 
-        // update the contact state from data.js
+        const { data } = await getContacts();
         this.setState(() => {
             return {
-                contacts: getContacts()
+                contacts: data
             };
         });
     }
